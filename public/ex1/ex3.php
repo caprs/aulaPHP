@@ -1,14 +1,12 @@
 <?php 
-    $nome = "Ana Livia";
-    $idade = "18";
-    $cidade = "Ourinhos";
+    $imagem = "iconephp.png";
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>VARIÁVEIS</title>
+    <title>IMAGEM</title>
     <style>
         * {
             user-select: none;
@@ -48,6 +46,7 @@
             font-size: 1.1rem;
             margin-bottom: 0.8rem;
             padding: 0.5rem;
+            border-bottom: 1px solid #eee;
         }
 
         p:last-child {
@@ -57,10 +56,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>VARIÁVEIS</h1>
-        <p>Nome: <?php echo $nome; ?></p>
-        <p>Idade: <?php echo $idade; ?></p>
-        <p>Cidade: <?php echo $cidade; ?></p>
+        <h1>IMAGEM</h1>
+        <img src=<?php echo $imagem ?> alt="Imagem php">
     </div>
 </body>
 </html>
